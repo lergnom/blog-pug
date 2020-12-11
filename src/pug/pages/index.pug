@@ -1,5 +1,6 @@
 extends ./../layouts/main.pug
-
+include ./../mixins/recent-post-mixin.pug
+ 
 block variables
     - const title = "Главная";
     - const title1 = "sdf"
@@ -9,13 +10,17 @@ block variables
 
 block recent-post 
     //- h1 #{title1}
-    .recent-post-block
-        .recent-post-block-overflow 
-            .recent-post-img
-                img(src="../img/small-thumbs/01.jpg", alt="мотоцикл")
-        .recent-post-title 
-            h3 Austin DIY sriracha polaroid sartorial la croix. 
-        .recent-post-desc
-            p december 26, 2019 — 5 comments
+    //- .recent-post-block
+    //-     .recent-post-block-overflow 
+    //-         .recent-post-img
+    //-             img(src="../img/small-thumbs/01.jpg", alt="мотоцикл")
+    //-     .recent-post-title 
+    //-         h3 Austin DIY sriracha polaroid sartorial la croix. 
+    //-     .recent-post-desc
+    //-         p december 26, 2019 — 5 comments
+    +recent-post()
+    +recent-post()
+    +recent-post()
+
  
 
