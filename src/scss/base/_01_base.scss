@@ -1,4 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+body,
+hr,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 body {
+  // font-family: "Exo 2", sans-serif;
+  // font-family: "Montserrat", sans-serif;
+  // font-family: "Playfair Display", serif;
   margin: 0;
   font-family: sans-serif;
   display: flex;
@@ -13,4 +40,9 @@ body {
   background-color: rgb(119, 176, 214);
   text-align: center;
   font-style: 62px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
