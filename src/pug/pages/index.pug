@@ -3,7 +3,8 @@ include ./../mixins/recent-post-mixin.pug
  
 block variables
     - const title = "Главная";
-    - const title1 = "sdf"
+    - const title1 = "sdf";
+    - var recentPostArr = ['один', 'два','nhb'];
 
 //- block content
 //-     h1 Это главная страница
@@ -18,9 +19,8 @@ block recent-post
     //-         h3 Austin DIY sriracha polaroid sartorial la croix. 
     //-     .recent-post-desc
     //-         p december 26, 2019 — 5 comments
-    +recent-post()
-    +recent-post()
-    +recent-post()
+    +recent-post(recentPostArr)
+   
 
  
 

@@ -1,9 +1,11 @@
-mixin recent-post()
-    .recent-post-block
-        .recent-post-block-overflow 
-            .recent-post-img
-                img(src="../img/small-thumbs/01.jpg", alt="мотоцикл")
-        .recent-post-title 
-            h3 Austin DIY sriracha polaroid sartorial la croix. 
-        .recent-post-desc
-            p december 26, 2019 — 5 comments
+mixin recent-post(recentPostArr)
+    each item in recentPostArr
+        .recent-post-block
+            .recent-post-block-overflow 
+                .recent-post-img
+                    img(src="../img/small-thumbs/01.jpg", alt="мотоцикл")
+            .recent-post-title 
+                h3 Austin DIY sriracha polaroid sartorial la croix. 
+            .recent-post-desc
+                p december 26, 2019 — 56 comments #{item}
+

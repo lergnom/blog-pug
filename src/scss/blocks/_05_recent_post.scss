@@ -1,12 +1,12 @@
 .recent-post-block {
   padding-top: 37px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #dde2e7;
-//   background-color: rgb(0, 0, 0);
+  //   background-color: rgb(0, 0, 0);
 }
 
 .recent-post-block-overflow {
@@ -22,13 +22,13 @@
   img {
     max-width: none;
     width: auto;
-    height: 200%;
+    // height: 200%;
     margin: 0px 0 0 -40px;
   }
 }
 
 .recent-post-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   h3 {
     font-size: 18px;
     font-family: "PlayfairDisplay";
