@@ -3,9 +3,9 @@ mixin recent-post(recentPostArr)
         .recent-post-block
             .recent-post-block-overflow 
                 .recent-post-img
-                    img(src="../img/small-thumbs/01.jpg", alt="мотоцикл")
+                    img(src="../img/small-thumbs/"+item.img, alt=item.img)
             .recent-post-title 
-                h3 Austin DIY sriracha polaroid sartorial la croix. 
+                h3 #{item.title} 
             .recent-post-desc
-                p december 26, 2019 — 56 comments #{item}
+                p #{item.date} — #{item.comment} comments 
 
