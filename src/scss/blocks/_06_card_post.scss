@@ -2,10 +2,48 @@
   text-align: center;
 }
 .card-title {
+  margin-bottom: 20px;
   h2 {
     font-size: 33px;
+    font-weight: 500;
     font-family: "PlayfairDisplay";
     color: rgb(26, 26, 26);
     line-height: 1.2;
+  }
+}
+
+.card-date {
+  margin-bottom: 37px;
+  p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(176, 176, 176);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+}
+
+.card-img-overflow {
+  margin-bottom: 33px;
+  width: 870px;
+  height: 360px;
+  overflow: hidden;
+  background-color: rgb(232, 76, 80);
+
+  img {
+    // height: 200%;
+    margin: -100px 0 0 0;
+  }
+}
+
+.card-desc {
+  p {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(26, 26, 26);
+    line-height: 1.75;
+    font-weight: 300;
+    text-align: left;
   }
 }
