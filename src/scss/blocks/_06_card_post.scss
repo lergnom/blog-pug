@@ -1,3 +1,11 @@
+.card-post-block {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  // height: 797px;
+  border-bottom: 1px solid #dde2e7;
+  // background-color: black;
+}
+
 .card-head {
   text-align: center;
 }
@@ -38,6 +46,7 @@
 }
 
 .card-desc {
+  margin-bottom: 34px;
   p {
     font-size: 16px;
     font-family: "Montserrat";
@@ -45,5 +54,117 @@
     line-height: 1.75;
     font-weight: 300;
     text-align: left;
+  }
+}
+
+.card-panel-buttons {
+  display: flex;
+  justify-content: space-between;
+  // width: 100%;
+  // background-color: yellow;
+}
+.card-submit {
+  button {
+    border-style: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(55, 85, 115);
+    width: 138px;
+    height: 44px;
+  }
+  &:hover {
+    opacity: 0.9;
+    .card-submit-text {
+      color: rgb(228, 140, 8);
+    }
+  }
+  .card-submit-text {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+.card-social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 170px;
+}
+
+.card-social-item {
+  margin-right: 25px;
+  a {
+    display: block;
+
+    &:hover {
+      animation: 1.2s ease-in-out 0s trambling-animation;
+    }
+
+    @keyframes trambling-animation {
+      0%,
+      50%,
+      100% {
+        transform: rotate(0deg);
+      }
+      10%,
+      30% {
+        transform: rotate(-10deg);
+      }
+      20%,
+      40% {
+        transform: rotate(10deg);
+      }
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card-social-whatsapp {
+  img {
+    width: $whatsappW;
+    height: $whatsappH;
+  }
+}
+.card-social-instagram {
+  width: $instagramW;
+  height: $instagramH;
+}
+.card-social-twitter {
+  width: $twitterW;
+  height: $twitterH;
+}
+.card-social-facebook {
+  width: $facebookW;
+  height: $facebookH;
+}
+
+.card-submit {
+  button {
+    border-style: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(55, 85, 115);
+    width: 138px;
+    height: 44px;
+  }
+  &:hover {
+    opacity: 0.9;
+    .card-submit-text {
+      color: rgb(228, 140, 8);
+    }
+  }
+  .card-submit-example {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: rgb(247, 15, 15);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
   }
 }

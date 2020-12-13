@@ -12,9 +12,10 @@
 .recent-posts-wrapper {
   width: 270px;
   height: 254px;
-//   background-color: rgba(162, 162, 194, 0.541);
+  //   background-color: rgba(162, 162, 194, 0.541);
 }
 .recent-posts-header {
+  margin-top: 60px;
   padding: 24px 0;
   border-width: 1px;
   border-color: rgb(221, 226, 231);
@@ -33,5 +34,4 @@
 .recent-posts-block {
   //   display: flex;
   //   justify-content: center;
-  
 }
