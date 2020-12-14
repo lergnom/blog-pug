@@ -1,9 +1,10 @@
-extends ./../layouts/main.pug
+extends ./../layouts/layout.pug
 include ./../mixins/button.pug
 include ./../mixins/card-mixin.pug
 include ./../mixins/posts-mixin.pug
 include ./../mixins/social.pug
 include ./../data/data.pug
+
 
 block recent-post
     +recent-post(recentPostArr)
@@ -13,6 +14,7 @@ block popular-post
     +recent-post(recentPostArr)
 block instagram
     +instagram(instaArr)
+
    
 
 

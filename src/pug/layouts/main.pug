@@ -1,39 +1,18 @@
-block variables
-
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="css/main.css")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Exo+2:900|Montserrat:300,300i,500,700|Playfair+Display&display=swap&subset=cyrillic" )
-       
-        title #{title}
-    body
-        header.header
-            .container
-                .logo-title
-                    h1 Hipsum Blog
-        main.main
-            .container
-                .flex-block-container
-                    .card-wrapper
-                        block card-post
-                    .recent-posts-wrapper
-                            .recent-posts-header
-                                h2 Recent posts
-                            block recent-post
-                            .recent-posts-header
-                                h2 Popular posts
-                            block popular-post
-                            .recent-posts-header
-                                h2 Instagram
-                            block instagram
-                            
-                            
-                
-        //- .content
-        //-     block content
-
-        script(src="js/main.js")
+main.main
+    .section-main
+        .container
+            .flex-block-container
+                .card-wrapper
+                    block card-post
+                    h2 pagination
+                .recent-posts-wrapper
+                        .recent-posts-header
+                            h2 Recent posts
+                        block recent-post
+                        .recent-posts-header
+                            h2 Popular posts
+                        block popular-post
+                        .recent-posts-header
+                            h2 Instagram
+                        block instagram
+script(src="js/main.js")
