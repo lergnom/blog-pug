@@ -1,7 +1,7 @@
 extends ./../layouts/main.pug
 include ./../mixins/button.pug
 include ./../mixins/card-mixin.pug
-include ./../mixins/recent-post-mixin.pug
+include ./../mixins/posts-mixin.pug
 include ./../mixins/social-icon.pug
 include ./../data/data.pug
 
@@ -9,6 +9,9 @@ block recent-post
     +recent-post(recentPostArr)
 block card-post
     +card(cardArr)
+block popular-post
+    +recent-post(recentPostArr)
+   
 
 
 
