@@ -1,0 +1,39 @@
+.pagination-wrapper {
+  margin-top: 38px;
+  padding-right: 30px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination {
+  span {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 265px;
+    }
+  }
+  .active {
+    color: rgb(232, 76, 80);
+  }
+}
+
+.older-posts {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
