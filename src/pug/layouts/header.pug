@@ -14,4 +14,11 @@ html(lang="en")
         header.header
             .container
                 .logo-title
-                    h1 Hipsum Blog
+                    h1 #{headerTitle}
+        .header-line
+        .header-social
+            +social-icon-new(footerIcons)
+        .header-search
+            img(src="../img/icons/search.svg", alt="")
+        .header-button
+            +button-template("header-submit", "header-submit-text", "subscribe", 007)

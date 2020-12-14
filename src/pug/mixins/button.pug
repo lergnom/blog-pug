@@ -1,4 +1,9 @@
-mixin button-template(buttonClass,title,id)
-    .card-submit 
+//- mixin button-template(buttonClass,buttonClassText,title,id)
+//-     .card-submit(class=" "+buttonClass) 
+//-         button
+//-             .card-submit-text(class=" " + buttonClassText, name="submit-" + id) #{title}
+
+mixin button-template(buttonClass, buttonClassText, title,id)
+    .submit(class=" "+buttonClass) 
         button
-            .card-submit-text(class=" " + buttonClass, name="submit-" + id) #{title}
+            .submit(class=" " + buttonClassText, name="submit-" + id) #{title}

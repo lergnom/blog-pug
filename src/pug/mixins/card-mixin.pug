@@ -11,6 +11,6 @@ mixin card(cardArr)
             .card-desc
                 p #{item.cardDesc}
             .card-panel-buttons
-                +button-template("card-submit-text","read more",item.cardId)
+                +button-template("card-submit","card-submit-text","read more",item.cardId)
                 .card-social
                     +social-icon(item.cardId)
