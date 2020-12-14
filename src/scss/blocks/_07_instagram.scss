@@ -1,0 +1,22 @@
+.instagram-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 270px;
+  //   background-color: green;
+}
+
+.instagram-img {
+  a {
+    display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  margin-bottom: 30px;
+  width: 120px;
+  height: 100px;
+  background-color: yellow;
+}

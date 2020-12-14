@@ -1,0 +1,25 @@
+mixin social-icon(linkAdress)
+    .card-social-item
+        .card-social-whatsapp
+            a(href="whatsapp-"+linkAdress)
+                img(src="../img/icons/social/whatsapp.svg", alt="")
+    .card-social-item
+        .card-social-instagram
+            a(href="instagram-"+linkAdress)                   
+                img(src="../img/icons/social/instagram.svg", alt="")
+    .card-social-item
+        .card-social-twitter
+            a(href="twitter-"+linkAdress)
+                img(src="../img/icons/social/twitter.svg", alt="")
+    .card-social-item                
+        .card-social-facebook
+            a(href="facebook-"+linkAdress)
+                img(src="../img/icons/social/facebook-f.svg", alt="")
+
+mixin instagram(instaArr)
+    .instagram-block
+        each item in instaArr
+            .instagram-img
+                a(href="")
+                    img(src="../img/instagram/" + item.img, alt=""+item.title)
+    

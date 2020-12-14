@@ -15,12 +15,18 @@
   //   background-color: rgba(162, 162, 194, 0.541);
 }
 .recent-posts-header {
-  margin-top: 60px;
+  cursor: default;
   padding: 24px 0;
   border-width: 1px;
   border-color: rgb(221, 226, 231);
   border-style: solid;
   border-radius: 4px;
+  &:first-child {
+    margin-top: 60px;
+  }
+  &:last-child {
+    // margin-top: 50px;
+  }
 
   h2 {
     text-align: center;
