@@ -1,22 +1,26 @@
 footer.footer
-    .footer-wrapper
-        .footer-post
-            ul
-                a(href="#")
-                    li Latest Posts
-                a(href="#")
-                    li Popular Posts
-        .footer-contact
-            ul
-                a(href="#")
-                    li Search
-                a(href="#")
-                    li Contact Information
-        .footer-policy
-            ul
-                a(href="#")
-                    li Privacy Policy
-                a(href="#")
-                    li Terms of Use
-        .footer-social-icons
-            +social-icon()
+    .container
+        .footer-wrapper
+            .footer-post
+                ul
+                    a(href="#")
+                        li Latest Posts
+                    a(href="#")
+                        li Popular Posts
+            .footer-contact
+                ul
+                    a(href="#")
+                        li Search
+                    a(href="#")
+                        li Contact Information
+            .footer-policy
+                ul
+                    a(href="#")
+                        li Privacy Policy
+                    a(href="#")
+                        li Terms of Use
+            .footer-social-icons
+                +social-icon-new(footerIcons)
+                //- +social-icon('main')
+    .copyright &copy; Copyright 2020. All rights reserved.
+        //- +social-icon-new(footerIcons)

@@ -3,28 +3,22 @@
   background-color: rgb(221, 226, 231);
 }
 
-a {
-  text-decoration: none;
-  &:hover {
-    color: black;
-  }
+a:hover {
+  color: black;
 }
 
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 55px;
   padding-bottom: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 100px;
 }
 .footer-post {
   ul {
-    a {
-      display: block;
-    }
     li {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       font-size: 16px;
       font-family: "Montserrat";
       line-height: 1.2;
@@ -35,34 +29,39 @@ a {
 }
 .footer-contact {
   ul {
-    a {
-      display: block;
-    }
     li {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       font-size: 16px;
       font-family: "Montserrat";
-      color: rgb(142, 147, 153);
       line-height: 1.2;
       text-align: left;
     }
+    color: rgb(142, 147, 153);
   }
 }
 .footer-policy {
   ul {
-    a {
-      display: block;
-    }
     li {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
       font-size: 16px;
       font-family: "Myriad Pro";
-      color: rgb(142, 147, 153);
       line-height: 1.2;
       text-align: left;
     }
+    color: rgb(142, 147, 153);
   }
 }
 .footer-social-icons {
   display: flex;
+}
+
+.copyright {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: rgb(232, 235, 238);
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(183, 186, 190);
+  line-height: 1.2;
+  text-align: center;
 }

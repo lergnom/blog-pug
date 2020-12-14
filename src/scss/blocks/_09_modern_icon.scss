@@ -1,0 +1,45 @@
+.social-new-icon {
+  margin-right: 25px;
+  a {
+    display: block;
+
+    &:hover {
+      animation: 1.2s ease-in-out 0s trambling-animation;
+    }
+
+    @keyframes trambling-animation {
+      0%,
+      50%,
+      100% {
+        transform: rotate(0deg);
+      }
+      10%,
+      30% {
+        transform: rotate(-10deg);
+      }
+      20%,
+      40% {
+        transform: rotate(10deg);
+      }
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.whatsapp {
+  width: 20px;
+  height: 20px;
+}
+.instagram {
+  width: 22px;
+  height: 22px;
+}
+.twitter {
+  width: 25px;
+  height: 21px;
+}
+.facebook-f {
+  width: 14px;
+  height: 25px;
+}

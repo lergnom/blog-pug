@@ -22,4 +22,9 @@ mixin instagram(instaArr)
             .instagram-img
                 a(href="")
                     img(src="../img/instagram/" + item.img, alt=""+item.title)
-    
+
+mixin social-icon-new(arr)
+    each item in arr
+        .social-new-icon(class="" + item.link)
+                a(href="" + item.link)
+                    img(src="../img/icons/social/" + item.icon, alt="" + item.link)
