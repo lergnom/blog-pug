@@ -15,9 +15,11 @@ a:hover {
   padding-bottom: 80px;
   padding-right: 100px;
 }
-.footer-post {
-  ul {
-    li {
+
+.footer-column {
+  li {
+    a {
+      display: block;
       padding-bottom: 15px;
       font-size: 16px;
       font-family: "Montserrat";
@@ -27,29 +29,16 @@ a:hover {
   }
   color: rgb(142, 147, 153);
 }
-.footer-contact {
-  ul {
-    li {
-      padding-bottom: 15px;
-      font-size: 16px;
-      font-family: "Montserrat";
-      line-height: 1.2;
-      text-align: left;
-    }
-    color: rgb(142, 147, 153);
+
+.footer-column-policy {
+  li {
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 1.2;
+    text-align: left;
   }
-}
-.footer-policy {
-  ul {
-    li {
-      padding-bottom: 15px;
-      font-size: 16px;
-      font-family: "Myriad Pro";
-      line-height: 1.2;
-      text-align: left;
-    }
-    color: rgb(142, 147, 153);
-  }
+  color: rgb(142, 147, 153);
 }
 .footer-social-icons {
   display: flex;

@@ -5,16 +5,12 @@
 
 .card-wrapper {
   width: 870px;
-  // height: 790px;
-  // background-color: rgba(25, 29, 25, 0.5);
 }
 
-.recent-posts-wrapper {
+.posts-wrapper {
   width: 270px;
-  // height: 254px;
-  //   background-color: rgba(162, 162, 194, 0.541);
 }
-.recent-posts-header {
+.posts-header {
   cursor: default;
   padding: 24px 0;
   border-width: 1px;
@@ -24,9 +20,6 @@
   &:first-child {
     margin-top: 60px;
   }
-  &:last-child {
-    // margin-top: 50px;
-  }
 
   h2 {
     text-align: center;
@@ -35,9 +28,4 @@
     color: rgb(26, 26, 26);
     font-weight: bold;
   }
-}
-
-.recent-posts-block {
-  //   display: flex;
-  //   justify-content: center;
 }

@@ -1,10 +1,29 @@
 mixin recent-post(recentPostArr)
     each item in recentPostArr
-        .recent-post-block
-            .recent-post-block-overflow 
-                .recent-post-img
+        .post-block
+            .post-block-overflow 
+                .post-img
                     img(src="../img/small-thumbs/"+item.img, alt=item.img)
-            .recent-post-title 
+            .post-title 
                 h3 #{item.title} 
-            .recent-post-desc
+            .post-desc
                 p #{item.date} — #{item.comment} comments 
+
+mixin popular-post(PostArr)
+    each item in PostArr
+        .post-block
+            .post-block-overflow 
+                .post-img
+                    img(src="../img/small-thumbs/"+item.img, alt=item.img)
+            .post-title 
+                h3 #{item.title} 
+            .post-desc
+                p #{item.date} — #{item.comment} comments 
+
+mixin posts-head-title (title)
+    .posts-header
+        h2 #{title}
+
+mixin footer-link(title, link='#')
+    li 
+        a(href=link) #{title}

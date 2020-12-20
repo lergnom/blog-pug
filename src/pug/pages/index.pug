@@ -1,21 +1,24 @@
-extends ./../layouts/layout.pug
-include ./../mixins/button.pug
-include ./../mixins/card-mixin.pug
-include ./../mixins/posts-mixin.pug
-include ./../mixins/social.pug
+extends ./../layouts/main.pug
 include ./../data/data.pug
 
+block content
+    include ./../sections/header.pug
 
-block recent-post
-    +recent-post(recentPostArr)
-block card-post
-    +card(cardArr)
-block popular-post
-    +recent-post(recentPostArr)
-block instagram
-    +instagram(instaArr)
+    main.main
+        .container
+            .flex-block-container
+                .card-wrapper
+                    +card(cardArr)
+                    .pagination-wrapper
+                        .free-place
+                        +pagination(pagArr)
+                        .older-posts older posts
+                .posts-wrapper
+                        +posts-head-title("Recent posts")
+                        +recent-post(recentPostArr)
+                        +posts-head-title("Popular posts")
+                        +popular-post(popularPostArr)
+                        +posts-head-title("Instagram")
+                        +instagram(instaArr)
 
-   
-
-
-
+    include ./../sections/footer.pug

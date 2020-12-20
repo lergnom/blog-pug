@@ -1,0 +1,5 @@
+mixin pagination (arr)
+    .pagination
+        each item in arr
+            a(class=item.class,href=item.href)
+                span #{item.id}

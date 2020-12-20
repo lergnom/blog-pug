@@ -1,0 +1,10 @@
+header.header
+    .header-container
+        .header-container__social
+            +social-icon-new(footerIcons)
+        .header-container__title
+            h1.title-1 #{headerTitle}
+        .header-container__buttons
+            .header-search
+                img(src="../img/icons/search.svg", alt="")
+            +button-template("header-submit", "header-submit-text", "subscribe", 007)
