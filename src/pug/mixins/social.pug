@@ -20,7 +20,7 @@ mixin instagram(instaArr)
     .instagram-block
         each item in instaArr
             .instagram-img
-                a(href="")
+                a(href=item.href)
                     img(src="../img/instagram/" + item.img, alt=""+item.title)
 
 mixin social-icon-new(arr)
