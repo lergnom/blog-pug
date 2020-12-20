@@ -12,13 +12,12 @@ html(lang="en")
         title #{title}
     body
         header.header
-            .container
-                .logo-title
-                    h1 #{headerTitle}
-        .header-line
-        .header-social
-            +social-icon-new(footerIcons)
-        .header-search
-            img(src="../img/icons/search.svg", alt="")
-        .header-button
-            +button-template("header-submit", "header-submit-text", "subscribe", 007)
+            .header-container
+                .header-container__social
+                    +social-icon-new(footerIcons)
+                .header-container__title
+                    h1.title-1 #{headerTitle}
+                .header-container__buttons
+                    .header-search
+                        img(src="../img/icons/search.svg", alt="")
+                    +button-template("header-submit", "header-submit-text", "subscribe", 007)
