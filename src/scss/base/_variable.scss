@@ -1,12 +1,42 @@
-//Размеры иконок для карточки
-$twitterW: 21px;
-$twitterH: 18px;
+//Шапка
+$headFont: "Exo 2";
+$headFontSize: 38px;
+$maxWidthHeadContainer: 1200px;
 
-$whatsappW: 21px;
-$whatsappH: 21px;
+// Карточка
+$titleCardFont: "PlayfairDisplay";
+$titleCardFontSize: 33px;
+$titleCardFontWeight: 500;
+$titleCardFontColor: rgb(26, 26, 26);
 
-$instagramW: 19px;
-$instagramH: 19px;
+$dateCardFont: "Montserrat";
+$dateCardFontSize: 14px;
+$dateCardFontWeight: bold;
+$dateCardFontColor: rgb(176, 176, 176);
 
-$facebookW: 12px;
-$facebookH: 21px;
+$descCardFont: "Montserrat";
+$descCardFontSize: 16px;
+$desceCardFontWeight: 300;
+$descCardFontColor: rgb(26, 26, 26);
+
+//Размеры социальных иконок
+$twitterW: 25px;
+$twitterH: 21px;
+
+$whatsappW: 20px;
+$whatsappH: 20px;
+
+$instagramW: 22px;
+$instagramH: 22px;
+
+$facebookW: 14px;
+$facebookH: 25px;
+
+// Пагинация
+$fontPagination: "Montserrat";
+$fontSizePagination: 18px;
+$fontWeightPagination: bold;
+$fontSizeOlderPosts: 14px;
+$fontColorPagination: #000;
+$pagHovercolor: rgb(232, 76, 80);
+$pagColor: rgb(232, 76, 80);

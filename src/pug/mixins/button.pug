@@ -1,9 +1,5 @@
-//- mixin button-template(buttonClass,buttonClassText,title,id)
-//-     .card-submit(class=" "+buttonClass) 
-//-         button
-//-             .card-submit-text(class=" " + buttonClassText, name="submit-" + id) #{title}
-
-mixin button-template(buttonClass, buttonClassText, title,id)
-    .submit(class=" "+buttonClass) 
-        button
-            .submit(class=" " + buttonClassText, name="submit-" + id) #{title}
+mixin button(buttonClass, buttonClassText, title, tag, link="#")
+    if tag == "a"
+        #{tag}(href=""+link, class="" + buttonClass + " " + buttonClassText) #{title}
+    else if tag == "button"
+        #{tag}(class="" + buttonClass + " " + buttonClassText, name="submit " + link) #{title}

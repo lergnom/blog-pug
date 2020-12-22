@@ -1,0 +1,47 @@
+.subscribe-btn {
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  border-radius: 36px;
+  background-color: rgb(55, 85, 115);
+  width: 153px;
+  height: 38px;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.subscribe-text {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 38px;
+  text-align: center;
+
+  &:hover {
+    color: rgb(255, 255, 0);
+  }
+}
+
+.card-btn {
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: rgb(55, 85, 115);
+  width: 138px;
+  height: 44px;
+
+  &:hover {
+    opacity: 0.9;
+    color: rgb(228, 140, 8);
+  }
+}
+.card-text {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 44px;
+  text-align: center;
+}

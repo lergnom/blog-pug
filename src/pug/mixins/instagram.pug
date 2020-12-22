@@ -1,0 +1,5 @@
+mixin instagram(instaArr)
+    .instagram-container
+        each item in instaArr
+            a.instagram-img(href=item.href)
+                    img(src="../img/instagram/" + item.img, alt=""+item.title)

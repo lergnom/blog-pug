@@ -1,22 +1,19 @@
-.instagram-block {
+.instagram-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
   width: 270px;
-  //   background-color: green;
 }
-
 .instagram-img {
-  a {
-    display: block;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+  display: block;
   margin-bottom: 30px;
   width: 120px;
   height: 100px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
   background-color: yellow;
 }

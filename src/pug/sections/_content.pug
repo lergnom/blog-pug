@@ -1,0 +1,13 @@
+main.main    
+    .card-container
+        +card(cardArr)
+        .pagination-row
+            +pagination(pagArr)
+            a.older-posts(href="#") older posts
+    .aside
+        h2 Recent posts
+        +post(recentPostArr)
+        h2 Popular posts
+        +post(popularPostArr)
+        h2 Instagram
+        +instagram(instaArr)

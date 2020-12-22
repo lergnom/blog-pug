@@ -2,24 +2,6 @@ extends ./../layouts/main.pug
 include ./../data/data.pug
 
 block content
-    include ./../sections/header.pug
-
-    main.main
-        .container
-            .flex-block-container
-                .card-wrapper
-                    +card(cardArr)
-                    .pagination-wrapper
-                        .free-place
-                        +pagination(pagArr)
-                        .older-posts 
-                            a(href="#") older posts
-                .posts-wrapper
-                        +posts-head-title("Recent posts")
-                        +recent-post(recentPostArr)
-                        +posts-head-title("Popular posts")
-                        +popular-post(popularPostArr)
-                        +posts-head-title("Instagram")
-                        +instagram(instaArr)
-
-    include ./../sections/footer.pug
+    include ./../sections/_header.pug
+    include ./../sections/_content.pug
+    include ./../sections/_footer.pug

@@ -1,0 +1,10 @@
+header.header
+    .header-container
+        .header-container__social
+            +social-icon(icons)
+        h1 #{headerTitle}
+        .header-container__buttons
+            a(href="search").header-search
+                img(src="../img/icons/search.svg", alt="")
+            +button("subscribe-btn", "subscribe-text", "subscribe", "a", "subscribe-me")
+//- Комментарий 1) передаю кнопке класс для оформления кнопки, 2) класс для оформления текста, 3) Заголовок, 4) Тэг кнопка или ссылка и 5) name для кнопки или href для ссылки

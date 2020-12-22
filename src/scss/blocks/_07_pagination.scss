@@ -1,0 +1,42 @@
+.pagination-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: $fontPagination;
+  font-weight: $fontWeightPagination;
+}
+
+.pagination {
+  a {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  span {
+    font-size: $fontSizePagination;
+    color: $fontColorPagination;
+    line-height: $fontSizePagination;
+    &:hover {
+      color: $pagHovercolor;
+    }
+  }
+  .active span {
+    color: $pagColor;
+  }
+}
+
+.older-posts {
+  position: absolute;
+  right: 0;
+  font-size: $fontSizeOlderPosts;
+  color: $fontColorPagination;
+  text-transform: uppercase;
+  line-height: $fontSizeOlderPosts;
+  text-align: right;
+  &:hover {
+    color: $pagColor;
+    opacity: 0.8;
+  }
+}

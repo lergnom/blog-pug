@@ -1,0 +1,12 @@
+mixin card(cardArr)
+    each item in cardArr
+        .card
+            h2 #{item.cardTitle} 
+            p #{item.cardDate} — #{item.cardComment} comments
+            .card-img-overflow
+                img(src="../img/full-post-img/"+item.cardImg, alt=item.cardImg)
+            p.desc #{item.cardDesc}
+            .card-footer
+                +button("card-btn", "card-text", "read more", "button", item.cardId)
+                .card-social-icons
+                    +social-icon(cardIcons)     

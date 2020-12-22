@@ -1,0 +1,75 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.card-container {
+  width: 870px;
+}
+
+.card {
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #dde2e7;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+
+    font-size: $titleCardFontSize;
+    font-weight: $titleCardFontWeight;
+    font-family: $titleCardFont;
+    color: $titleCardFontColor;
+    line-height: $titleCardFontSize;
+  }
+
+  p {
+    margin-bottom: 37px;
+
+    font-size: $dateCardFontSize;
+    font-family: $dateCardFont;
+    color: $dateCardFontColor;
+    font-weight: $dateCardFontWeight;
+    text-transform: uppercase;
+    line-height: $dateCardFontSize;
+  }
+
+  .card-img-overflow {
+    margin-bottom: 33px;
+    width: 870px;
+    height: 360px;
+    overflow: hidden;
+    background-color: rgb(232, 76, 80);
+
+    img {
+      margin: -100px 0 0 0;
+    }
+  }
+}
+
+.card .desc {
+  margin-bottom: 34px;
+  font-size: $descCardFontSize;
+  font-family: $descCardFont;
+  color: $descCardFontColor;
+  line-height: 28px;
+  font-weight: $desceCardFontWeight;
+  text-align: left;
+  text-transform: none;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+
+  .card-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 170px;
+  }
+}

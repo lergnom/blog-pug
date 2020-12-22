@@ -1,0 +1,7 @@
+mixin post(recentPostArr)
+    each item in recentPostArr
+        .post
+            .post-img-overflow 
+                img(src="../img/small-thumbs/"+item.img, alt=item.img)
+            h3 #{item.title} 
+            p #{item.date} — #{item.comment} comments 
